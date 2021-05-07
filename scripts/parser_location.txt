@@ -1,0 +1,3 @@
+candc:/home/ubuntu/ccgcomp/candc-1.00
+easyccg:/home/ubuntu/ccgcomp/easyccg
+depccg:

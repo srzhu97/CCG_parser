@@ -1,0 +1,15 @@
+/plain_multinli
+/plain_multinli_dev
+/mnli_results
+/mnli_dev_results
+/multinli_1.0
+/med_plain
+*.zip
+/*_plain
+/*.tsv
+/stanford-tregex-2018-10-16
+/LF
+/LF_dev
+/*.txt
+/*.answer
+
