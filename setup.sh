@@ -14,9 +14,9 @@ mkdir plain_multinli_train
 sh tools/extract_mnli_train.sh
 # apply parser
 mkdir cache
-mkdir LF
 mkdir mnli_train_results
 chmod +x ./scripts/eval_mnli_train.sh
 chmod +x ./scripts/rte_train.sh
 # arg1: start number, argv2: end number
+mkdir LF
 python process_mnli.py 1 5
