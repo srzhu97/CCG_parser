@@ -156,15 +156,15 @@ echo "
 echo "----------------------------------------------------------------------------" \
  >> ${results_dir}/score.txt
 echo -e "Multi-parsers:" >> ${results_dir}/score.txt
-python scripts/report_results_mnli.py gold.results system.results >> ${results_dir}/score.txt
+python scripts/report_results_mnli_train.py gold.results system.results >> ${results_dir}/score.txt
 echo "----------------------------------------------------------------------------" \
  >> ${results_dir}/score.txt
 echo -e "C&C:" >> ${results_dir}/score.txt
-python scripts/report_results_mnli.py gold.results candc.results >> ${results_dir}/score.txt
+python scripts/report_results_mnli_train.py gold.results candc.results >> ${results_dir}/score.txt
 echo "----------------------------------------------------------------------------" \
  >> ${results_dir}/score.txt
 echo -e "depccg:" >> ${results_dir}/score.txt
-python scripts/report_results_mnli.py gold.results depccg.results >> ${results_dir}/score.txt
+python scripts/report_results_mnli_train.py gold.results depccg.results >> ${results_dir}/score.txt
 
 cat ${results_dir}/score.txt
 

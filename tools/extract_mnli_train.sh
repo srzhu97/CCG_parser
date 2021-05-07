@@ -39,7 +39,7 @@ awk -F'\t' -v tdir=${plain_dir} \
     } else if ($1 == "neutral") {
       judgement="unknown";
     }
-    printf "%s\n%s\n", premise, conclusion > tdir"/mnli_dev_"id"_gq.txt";
-    printf "%s\n", judgement > tdir"/mnli_dev_"id"_gq.answer";
+    printf "%s\n%s\n", premise, conclusion > tdir"/mnli_train_"id"_gq.txt";
+    printf "%s\n", judgement > tdir"/mnli_train_"id"_gq.answer";
    }'
 

@@ -22,3 +22,5 @@ MED/
 /hans/
 /tptp
 /vampire-4.4
+mnli_train_results/
+plain_multinli_train/

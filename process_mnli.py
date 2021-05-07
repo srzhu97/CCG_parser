@@ -6,7 +6,7 @@ import subprocess
 from math import ceil
 
 def proving(startnum, endnum):
-    process = subprocess.Popen(["./scripts/eval_mnli.sh", "gq", "1", "scripts/semantic_templates.yaml", str(startnum), str(endnum)])
+    process = subprocess.Popen(["./scripts/eval_mnli_train.sh", "gq", "1", "scripts/semantic_templates.yaml", str(startnum), str(endnum)])
     process.wait()
     print(f"Finishing {startnum} {endnum}")
 

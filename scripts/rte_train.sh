@@ -169,7 +169,7 @@ function proving() {
   parser=$1
   sentences_basename=$2
   start_time=`python -c 'import time; print(time.time())'`
-    timeout 100 python scripts/eval_mnli.py \
+    timeout 100 python scripts/eval_mnli_train.py \
       ${parsed_dir}/${sentences_basename}.${parser}.sem.xml \
       --prover vampire \
       > ${results_dir}/${sentences_basename}.${parser}.answer \
